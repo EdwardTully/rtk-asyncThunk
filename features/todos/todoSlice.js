@@ -3,7 +3,7 @@ const { default: axios } = require('axios')
 const createSlice = require('@reduxjs/toolkit').createSlice
 const createAsyncThunk = require('@reduxjs/toolkit').createAsyncThunk
 
-inititalState = {
+const initialState = {
     loading: false,
     todos: [],
     error: ''

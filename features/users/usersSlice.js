@@ -3,7 +3,7 @@ const createAsyncThunk = require('@reduxjs/toolkit').createAsyncThunk
 const axios = require('axios')
 
 //step one, initial state and the three standard keys
-initialState = {
+const initialState = {
    loading: false,
    users: [],
    error: ''
