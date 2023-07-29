@@ -13,6 +13,7 @@ const fetchPosts = createAsyncThunk('posts/fetchPosts', ()=>{
     return axios
     .get('https://jsonplaceholder.typicode.com/posts')
     .then((response)=> response.data.map((ea)=>
+    //bracket don't work in these types of arrow functions
         `Post number ${ea.id}, user responded with ${ea.body}`
     ))
 })
