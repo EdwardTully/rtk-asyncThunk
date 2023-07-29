@@ -2,6 +2,7 @@ const store = require('./app/store')
 const fetchUsers = require('./features/users/usersSlice').fetchUsers
 const fetchTodos = require('./features/todos/todoSlice').fetchTodos
 const companyFetch = require('./features/companies/companySlice').companyFetch
+const fetchPosts = require('./features/posts/postsSlice').fetchPosts
 
 console.log('Initial State:', store.getState())
 
@@ -12,4 +13,5 @@ const unsubscribe = store.subscribe(()=>{
 
 //store.dispatch(fetchUsers())
 //store.dispatch(fetchTodos())
-store.dispatch(companyFetch())
+//store.dispatch(companyFetch())
+store.dispatch(fetchPosts())
