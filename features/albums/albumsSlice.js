@@ -16,7 +16,7 @@ const fetchAlbums = createAsyncThunk("albums/fetchAlbums", () => {
         if (ea.userId === 3 || ea.userId ===5) {
           return `Provided by ${ea.userId}, id = ${ea.id}, entitled ${ea.title}`;
         } else {
-            return 'Data Disregarded'
+            return 'Album not used'
         }
       })
     );
